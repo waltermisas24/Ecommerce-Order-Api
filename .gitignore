@@ -1,0 +1,58 @@
+# Archivos generados por compilación
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Visual Studio
+.vscode/
+.vs/
+*.dbmdl
+*.bak
+*.log
+
+# Rider
+.idea/
+*.sln.iml
+
+# Archivos de configuración local
+appsettings.*.json
+appsettings.*.yml
+
+# Paquetes
+*.nupkg
+*.snupkg
+packages/
+# Si usas paquetes descargados localmente
+# !packages/build/
+# !packages/repositories.config
+
+# Archivos de pruebas y cobertura
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+
+# Logs
+*.log
+
+# Archivos de publicación
+publish/
+*.publish.xml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Otros
+*.swp
+*.swo
+*.tmp
