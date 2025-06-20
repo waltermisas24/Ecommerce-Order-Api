@@ -81,7 +81,6 @@ La API estará disponible en: `https://localhost:{puerto}/swagger`
 Puedes probar todos los endpoints directamente desde la interfaz Swagger disponible al correr la API.
 
 Ejemplo de JSON para creación
-
 ```json
 {
   "customerId": "cliente001",
@@ -90,9 +89,9 @@ Ejemplo de JSON para creación
     { "productId": "PROD-002", "quantity": 1, "price": 9.99 }
   ]
 }
+```
 
 Para actualizar ítems de una orden, puedes usar el siguiente formato:
-
 ```json
 [
   {
