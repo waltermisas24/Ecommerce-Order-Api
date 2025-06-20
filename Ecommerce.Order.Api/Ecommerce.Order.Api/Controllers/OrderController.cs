@@ -1,4 +1,4 @@
-﻿using Ecommerce.Order.Application.Interfaces;
+﻿using Ecommerce.Order.Domain.Interfaces;
 using Ecommerce.Order.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -42,7 +42,7 @@ namespace Ecommerce.Order.Api.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Error al actualizar los items: {ex.Message}");
+                return StatusCode(500, $"Error al actualizar los items: {ex.Message} - {ex.InnerException?.Message}");
             }
         }
 
