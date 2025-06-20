@@ -1,14 +1,12 @@
 # Ecommerce.Order.API
 
-Este proyecto es una API RESTful construida con ASP.NET Core que forma parte de un sistema de ecommerce modular. El microservicio `Ecommerce.Order.API` está encargado de gestionar órdenes de compra y sus respectivos ítems.
+Este proyecto es una API RESTful construida NEt 8.0 que forma parte de un sistema de ecommerce modular. El microservicio `Ecommerce.Order.API` está encargado de gestionar órdenes de compra y sus respectivos ítems.
 
 ## Características
 
 - Creación de órdenes (`OrderInfo`) con múltiples ítems (`OrderItem`)
 - Relación uno a muchos entre `OrderInfo` y `OrderItem`
-- Operaciones CRUD para órdenes e ítems
-- Eliminación en cascada de ítems al eliminar o actualizar una orden
-- Manejo de errores centralizado
+- Eliminación en cascada de ítems al actualizar una orden
 - Migraciones con Entity Framework Core
 - Arquitectura limpia: separación de capas (Domain, Infrastructure, Application, API)
 
@@ -76,7 +74,6 @@ dotnet ef migrations add InitialCreate --project Ecommerce.Order.Infrastructure 
 dotnet ef database update --project Ecommerce.Order.Infrastructure --startup-project Ecommerce.Order.API
 
 ```
-
 La API estará disponible en: `https://localhost:{puerto}/swagger`
 
 ## Pruebas en Swagger
