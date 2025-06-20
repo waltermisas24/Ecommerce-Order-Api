@@ -111,10 +111,10 @@ Para actualizar ítems de una orden, puedes usar el siguiente formato:
 
 ## Notas de diseño
 
--Se utiliza código-first con EF Core y SQL Server.
--La propiedad OrderInfoId se maneja internamente para mantener la integridad referencial.
--Se eliminan los ítems viejos antes de insertar los nuevos, evitando conflictos de clave foránea o tracking.
--La limpieza de migraciones se puede rehacer repitiendo los pasos anteriores.
+- Se utiliza código-first con EF Core y SQL Server.
+- La propiedad OrderInfoId se maneja internamente para mantener la integridad referencial.
+- Se eliminan los ítems viejos antes de insertar los nuevos, evitando conflictos de clave foránea o tracking.
+- La limpieza de migraciones se puede rehacer repitiendo los pasos anteriores.
 
 ## Tecnologías Usadas
 
